@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@400;500;700&family=Space+Grotesk:wght@400;700&family=JetBrains+Mono:wght@400;700&display=swap');
+
+:root {
+  /* Antigravity Palette */
+  --color-void:        #06060f;   /* Deep space background */
+  --color-ascent:      #7C3AED;   /* Primary upward energy */
+  --color-drift:       #0EA5E9;   /* Horizontal motion accent */
+  --color-trail:       #C4B5FD;   /* Particle trail tint */
+  --color-halo:        rgba(99,102,241,0.12);  /* Ambient glow */
+
+  /* Typography */
+  --font-display:      'Space Grotesk', system-ui;
+  --font-mono:         'JetBrains Mono', monospace;
+  --font-sans:         'Inter', system-ui, sans-serif;
+
+  /* Motion */
+  --ease-float:        cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  --ease-snap:         cubic-bezier(0.68, -0.55, 0.27, 1.55);
+
+  /* Spacing (8-pt grid) */
+  --space-1: 4px;  --space-2: 8px;  --space-3: 12px;
+  --space-4: 16px; --space-5: 20px; --space-6: 24px;
+}
