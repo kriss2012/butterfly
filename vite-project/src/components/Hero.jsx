@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import './Hero.css';
 import Navbar from './Navbar';
-import Butterflies from './Butterflies';
+import ButterflyBackground from './ButterflyBackground';
 import { useInView , motion } from 'framer-motion';
 
 const Hero = () => {
@@ -11,7 +11,7 @@ const section1RightRef = useRef(null);
 const isInViewRight = useInView(section1RightRef, { amount: 0.7, once: true });
   return (
    <>
-         <Butterflies /> 
+         <ButterflyBackground /> 
 
     <div className="hero">
       <Navbar />
