@@ -1,5 +1,5 @@
 .control-panel {
-  position: absolute;
+  position: fixed;
   top: 90px;
   right: 24px;
   width: 320px;
@@ -37,7 +37,7 @@
 }
 
 .panel-toggle-btn {
-  position: absolute;
+  position: fixed;
   top: 90px;
   right: 24px;
   width: 44px;
