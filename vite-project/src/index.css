@@ -1,0 +1,13 @@
+@import "./design-tokens.css";
+
+body {
+  margin: 0;
+  background-color: var(--color-void, #06060f);
+  color: #ffffff;
+  font-family: var(--font-sans, 'Inter', sans-serif);
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
