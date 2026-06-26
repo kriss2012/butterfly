@@ -22,8 +22,9 @@
   font-size: 8px;
   font-weight: 700;
   text-transform: uppercase;
-  color: #64748b;
-  letter-spacing: 0.1em;
+  color: #cbd5e1;
+  letter-spacing: 0.12em;
+  margin-bottom: 2px;
 }
 
 .stat-value {
