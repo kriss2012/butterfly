@@ -1,0 +1,111 @@
+.butterfly-bg-container {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+  transition: background 0.5s ease;
+}
+
+.butterfly-bg-container.sandbox-active {
+  z-index: 999;
+  pointer-events: auto;
+  background: rgba(6, 6, 15, 0.5); /* Dim the garden slightly to emphasize the sandbox */
+}
+
+/* Floating HUD Controls */
+.hud-overlay {
+  position: fixed;
+  top: 90px;
+  left: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  z-index: 1000;
+  pointer-events: auto;
+}
+
+.sandbox-toggle-btn {
+  background: linear-gradient(135deg, #7c3aed, #0ea5e9);
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 18px;
+  font-family: var(--font-display, sans-serif);
+  font-weight: 700;
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(124, 58, 237, 0.35);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.sandbox-toggle-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(124, 58, 237, 0.5);
+}
+
+.sandbox-toggle-btn.active {
+  background: #ef4444;
+  box-shadow: 0 4px 15px rgba(239, 68, 68, 0.35);
+}
+
+/* Instruction Banner */
+.sandbox-instruction {
+  position: fixed;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%) translateY(50px);
+  opacity: 0;
+  background: rgba(10, 10, 25, 0.85);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(124, 58, 237, 0.3);
+  padding: 10px 24px;
+  border-radius: 20px;
+  color: #c4b5fd;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  pointer-events: none;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.sandbox-instruction.show {
+  transform: translateX(-50%) translateY(0);
+  opacity: 1;
+}
+
+.pulse-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #ef4444;
+  animation: pulse-animation 1.5s infinite;
+}
+
+@keyframes pulse-animation {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.7);
+  }
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 6px rgba(239, 68, 68, 0);
+  }
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(239, 68, 68, 0);
+  }
+}
