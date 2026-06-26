@@ -1,0 +1,119 @@
+*{
+    padding: 0;
+   margin: 0;
+}
+.hero {
+  height: 100vh;
+  width: 1440px;
+  background-image: url('/images/hero.png');
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  overflow: hidden;
+  position: relative;
+  color: #000000; 
+}
+
+.hero-content {
+    margin-top: 200px;
+  max-width: 760px;
+  z-index: 2;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.hero button {
+  padding: 0.8rem 1.6rem;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.hero button:hover {
+  background-color: #388E3C;
+}
+.section1 {
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  gap: 100px;
+  padding: 60px 100px;
+  min-height: 60vh;
+  background-color: #e3f6f5; 
+  box-sizing: border-box;
+}
+
+.section1-left img {
+  max-width: 450px;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+
+}
+
+.section1-right {
+  padding-left: 60px;
+  width: 460px;
+}
+
+.section1-right h1 {
+  font-size: 3rem;
+  color: #2d6a4f; 
+  margin-bottom: 20px;
+}
+
+.section1-right p {
+  font-size: 1.25rem;
+  color: #333;
+  line-height: 1.6;
+  width: 560px;
+}
+.section2 {
+  height: 70vh;
+  width: 1320px;
+  background-image: url('/images/section2.png'); 
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.section2-content {
+  height: 250px;
+  padding: 2rem 3rem;
+  border-radius: 12px;
+  max-width: 700px;
+  text-align: center;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+.section2-content h1{
+  height: 24px;
+  margin-bottom: 20px;
+}
+.section2-content p{
+  margin-top: 30px;
+  font-size: 18px;
+  line-height: 30px;
+}
