@@ -1,10 +1,12 @@
-*{
-    padding: 0;
-   margin: 0;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
+
 .hero {
   height: 100vh;
-  width: 1440px;
+  width: 100%;
   background-image: url('/images/hero.png');
   background-size: cover;
   background-position: center bottom;
@@ -15,105 +17,148 @@
   justify-content: start;
   overflow: hidden;
   position: relative;
-  color: #000000; 
+  color: #1e293b; 
 }
 
 .hero-content {
-    margin-top: 200px;
-  max-width: 760px;
+  margin-top: 12vh;
+  width: 90%;
+  max-width: 800px;
   z-index: 2;
   text-align: center;
+  background: rgba(255, 255, 255, 0.45);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  padding: 45px 50px;
+  border-radius: 24px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
 }
 
 .hero h1 {
-  font-size: 3rem;
+  font-family: var(--font-display, 'Space Grotesk', sans-serif);
+  font-size: 3.2rem;
+  font-weight: 700;
   margin-bottom: 1rem;
+  color: #0f172a;
 }
 
 .hero p {
-  font-size: 1.2rem;
+  font-size: 1.25rem;
   margin-bottom: 2rem;
+  color: #334155;
+  font-weight: 500;
 }
 
 .hero button {
-  padding: 0.8rem 1.6rem;
-  background-color: #4CAF50;
+  padding: 0.9rem 2rem;
+  background-color: #2d6a4f;
   border: none;
-  border-radius: 8px;
+  border-radius: 12px;
   color: white;
-  font-size: 1rem;
+  font-size: 1.05rem;
+  font-weight: 600;
   cursor: pointer;
-  transition: background 0.3s ease;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(45, 106, 79, 0.3);
 }
 
 .hero button:hover {
-  background-color: #388E3C;
+  background-color: #1b4332;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(45, 106, 79, 0.4);
 }
+
 .section1 {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  justify-content:center;
-  gap: 100px;
-  padding: 60px 100px;
+  justify-content: center;
+  gap: 60px;
+  padding: 80px 8%;
   min-height: 60vh;
   background-color: #e3f6f5; 
-  box-sizing: border-box;
+  width: 100%;
+}
+
+.section1-left {
+  flex: 1;
+  min-width: 320px;
+  max-width: 480px;
+  display: flex;
+  justify-content: center;
 }
 
 .section1-left img {
-  max-width: 450px;
   width: 100%;
   height: auto;
+  border-radius: 20px;
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.08);
   object-fit: cover;
-
 }
 
 .section1-right {
-  padding-left: 60px;
-  width: 460px;
+  flex: 12;
+  min-width: 320px;
+  max-width: 580px;
 }
 
 .section1-right h1 {
-  font-size: 3rem;
+  font-family: var(--font-display, 'Space Grotesk', sans-serif);
+  font-size: 2.8rem;
   color: #2d6a4f; 
   margin-bottom: 20px;
+  font-weight: 700;
 }
 
 .section1-right p {
-  font-size: 1.25rem;
-  color: #333;
-  line-height: 1.6;
-  width: 560px;
+  font-size: 1.15rem;
+  color: #334155;
+  line-height: 1.7;
+  margin-bottom: 12px;
+  width: 100%;
 }
+
 .section2 {
-  height: 70vh;
-  width: 1320px;
-  background-image: url('/images/section2.png'); 
+  min-height: 80vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url('/images/section2.png'); 
   background-size: cover;
   background-position: center bottom;
   background-repeat: no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 4rem;
+  padding: 80px 8%;
   position: relative;
   overflow: hidden;
 }
 
 .section2-content {
-  height: 250px;
-  padding: 2rem 3rem;
-  border-radius: 12px;
-  max-width: 700px;
+  width: 100%;
+  max-width: 800px;
+  background: rgba(10, 25, 20, 0.7); 
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 50px 45px;
+  border-radius: 24px;
   text-align: center;
-  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
+  color: #ffffff;
 }
-.section2-content h1{
-  height: 24px;
+
+.section2-content h2 {
+  font-family: var(--font-display, 'Space Grotesk', sans-serif);
+  font-size: 2.5rem;
+  color: #a7f3d0;
   margin-bottom: 20px;
+  font-weight: 700;
 }
-.section2-content p{
-  margin-top: 30px;
-  font-size: 18px;
-  line-height: 30px;
+
+.section2-content p {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: #e2e8f0;
+  margin: 0;
 }
