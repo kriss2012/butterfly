@@ -232,3 +232,13 @@ See [CONTRIBUTING.md](docs/CONTRIBUTING.md) for our full guide. The short versio
 ## License
 
 MIT © 2024 kriss2012. See [LICENSE](LICENSE).
+
+---
+
+## Security
+
+Please refer to [SECURITY.md](SECURITY.md) for vulnerability reporting guidelines.
+
+## Author
+
+Developed and maintained by **[Krishna Patil](https://github.com/kriss2012)**.
